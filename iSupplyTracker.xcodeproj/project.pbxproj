@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C410A65227EDE0E400E4E0D5 /* ItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C410A65127EDE0E400E4E0D5 /* ItemEditView.swift */; };
+		C416004827E9F5F400F47D42 /* iSupplyTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416004727E9F5F400F47D42 /* iSupplyTrackerApp.swift */; };
+		C416004A27E9F5F400F47D42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416004927E9F5F400F47D42 /* ContentView.swift */; };
+		C416004C27E9F5F500F47D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C416004B27E9F5F500F47D42 /* Assets.xcassets */; };
+		C416004F27E9F5F500F47D42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C416004E27E9F5F500F47D42 /* Preview Assets.xcassets */; };
+		C431E0AA2805D83B00BF06AF /* InfoPane+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E0A82805D83B00BF06AF /* InfoPane+CoreDataClass.swift */; };
+		C431E0AB2805D83B00BF06AF /* InfoPane+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431E0A92805D83B00BF06AF /* InfoPane+CoreDataProperties.swift */; };
+		C436F67627FAF0B200ACF5FD /* ExpirationDateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C436F67527FAF0B200ACF5FD /* ExpirationDateSelectionView.swift */; };
+		C44514D1280DBB7F00D345CB /* InventoryByThresholdSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44514D0280DBB7F00D345CB /* InventoryByThresholdSetupView.swift */; };
+		C445859027F5BDD600BBA062 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445858F27F5BDD600BBA062 /* SummaryView.swift */; };
+		C445859827F5DBEB00BBA062 /* StorageLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445859627F5DBEB00BBA062 /* StorageLocation+CoreDataClass.swift */; };
+		C445859927F5DBEB00BBA062 /* StorageLocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445859727F5DBEB00BBA062 /* StorageLocation+CoreDataProperties.swift */; };
+		C445859C27F5DC1000BBA062 /* Lot+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445859A27F5DC1000BBA062 /* Lot+CoreDataClass.swift */; };
+		C445859D27F5DC1000BBA062 /* Lot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445859B27F5DC1000BBA062 /* Lot+CoreDataProperties.swift */; };
+		C4598E1727F210A60063C50B /* SummedInventoryMeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4598E1627F210A60063C50B /* SummedInventoryMeasurementView.swift */; };
+		C460DF5627F987CF001F58A3 /* LocationSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460DF5527F987CF001F58A3 /* LocationSelectionView.swift */; };
+		C479778D2812FD2E00011F82 /* EditLocationNameSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479778C2812FD2E00011F82 /* EditLocationNameSheetView.swift */; };
+		C485F4D82811FA8400CC1ECC /* EditLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485F4D72811FA8400CC1ECC /* EditLocationsView.swift */; };
+		C49230C127EF5E9C00FA76FE /* BarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49230C027EF5E9C00FA76FE /* BarCode.swift */; };
+		C49230C827EF62D300FA76FE /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49230C227EF62D300FA76FE /* Category+CoreDataClass.swift */; };
+		C49230C927EF62D300FA76FE /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49230C327EF62D300FA76FE /* Category+CoreDataProperties.swift */; };
+		C49230CC27EF62D300FA76FE /* ItemInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49230C627EF62D300FA76FE /* ItemInfo+CoreDataClass.swift */; };
+		C49230CD27EF62D300FA76FE /* ItemInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49230C727EF62D300FA76FE /* ItemInfo+CoreDataProperties.swift */; };
+		C4A7BABE27EB10D600A39385 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7BABD27EB10D600A39385 /* CategoryDetailView.swift */; };
+		C4A7BAC027EB12C800A39385 /* TextFieldNavigatationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7BABF27EB12C800A39385 /* TextFieldNavigatationView.swift */; };
+		C4AB171527EB86E10070A50E /* ListItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AB171427EB86E10070A50E /* ListItemContent.swift */; };
+		C4AB234127F087E900875E42 /* InventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AB234027F087E900875E42 /* InventoryListView.swift */; };
+		C4AE9C5227F8DFDF0090793D /* ScannerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE9C5127F8DFDF0090793D /* ScannerToolbar.swift */; };
+		C4AE9C5427F97A090090793D /* CustomViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE9C5327F97A090090793D /* CustomViewModifiers.swift */; };
+		C4CB33B227FEC6A9008BED3D /* InventoryMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB33B127FEC6A9008BED3D /* InventoryMeasurement.swift */; };
+		C4CB33B427FEC819008BED3D /* CountUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB33B327FEC819008BED3D /* CountUnit.swift */; };
+		C4CF078A27EA30FE00B02AFA /* Inventory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4CF078827EA30FE00B02AFA /* Inventory.xcdatamodeld */; };
+		C4CF078F27EA3B8800B02AFA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF078E27EA3B8800B02AFA /* RootView.swift */; };
+		C4CF079127EA3C8F00B02AFA /* CoreDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF079027EA3C8F00B02AFA /* CoreDataCoordinator.swift */; };
+		C4CF079427EA458200B02AFA /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF079327EA458200B02AFA /* CategoriesListView.swift */; };
+		C4DBFF99280044150028C7D1 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBFF98280044150028C7D1 /* LocationsView.swift */; };
+		C4DBFF9B2800458E0028C7D1 /* NestedListContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBFF9A2800458E0028C7D1 /* NestedListContent.swift */; };
+		C4DBFF9D280083C40028C7D1 /* ExpiredInventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DBFF9C280083C40028C7D1 /* ExpiredInventoryView.swift */; };
+		C4DC519527EC90CB00C9CA52 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC519427EC90CB00C9CA52 /* ScannerViewController.swift */; };
+		C4DC519727EC930300C9CA52 /* UIScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC519627EC930300C9CA52 /* UIScannerViewController.swift */; };
+		C4DC519B27ECA2EF00C9CA52 /* UIScanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DC519A27ECA2EF00C9CA52 /* UIScanner.storyboard */; };
+		C4DC519D27ECA71700C9CA52 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC519C27ECA71700C9CA52 /* ScannerView.swift */; };
+		C4DD8C0727ECB09B00C4E75A /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD8C0627ECB09B00C4E75A /* PreviewView.swift */; };
+		C4ED2C8E27EB23A7006B80D6 /* UnitPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ED2C8D27EB23A7006B80D6 /* UnitPickerView.swift */; };
+		C4EE26532804969300298888 /* InventoryByDateSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE26522804969300298888 /* InventoryByDateSetupView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C410A65127EDE0E400E4E0D5 /* ItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEditView.swift; sourceTree = "<group>"; };
+		C416004427E9F5F400F47D42 /* iSupplyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSupplyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C416004727E9F5F400F47D42 /* iSupplyTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSupplyTrackerApp.swift; sourceTree = "<group>"; };
+		C416004927E9F5F400F47D42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C416004B27E9F5F500F47D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C416004E27E9F5F500F47D42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C431E0A82805D83B00BF06AF /* InfoPane+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InfoPane+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C431E0A92805D83B00BF06AF /* InfoPane+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InfoPane+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C436F67527FAF0B200ACF5FD /* ExpirationDateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationDateSelectionView.swift; sourceTree = "<group>"; };
+		C44514D0280DBB7F00D345CB /* InventoryByThresholdSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryByThresholdSetupView.swift; sourceTree = "<group>"; };
+		C445858F27F5BDD600BBA062 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		C445859627F5DBEB00BBA062 /* StorageLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C445859727F5DBEB00BBA062 /* StorageLocation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageLocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C445859A27F5DC1000BBA062 /* Lot+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lot+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C445859B27F5DC1000BBA062 /* Lot+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4598E1627F210A60063C50B /* SummedInventoryMeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummedInventoryMeasurementView.swift; sourceTree = "<group>"; };
+		C460DF5527F987CF001F58A3 /* LocationSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionView.swift; sourceTree = "<group>"; };
+		C479778C2812FD2E00011F82 /* EditLocationNameSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLocationNameSheetView.swift; sourceTree = "<group>"; };
+		C485F4D72811FA8400CC1ECC /* EditLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLocationsView.swift; sourceTree = "<group>"; };
+		C49230C027EF5E9C00FA76FE /* BarCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCode.swift; sourceTree = "<group>"; };
+		C49230C227EF62D300FA76FE /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C49230C327EF62D300FA76FE /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C49230C627EF62D300FA76FE /* ItemInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C49230C727EF62D300FA76FE /* ItemInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C4A7BABD27EB10D600A39385 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
+		C4A7BABF27EB12C800A39385 /* TextFieldNavigatationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNavigatationView.swift; sourceTree = "<group>"; };
+		C4AB171427EB86E10070A50E /* ListItemContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemContent.swift; sourceTree = "<group>"; };
+		C4AB234027F087E900875E42 /* InventoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListView.swift; sourceTree = "<group>"; };
+		C4AE9C5127F8DFDF0090793D /* ScannerToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerToolbar.swift; sourceTree = "<group>"; };
+		C4AE9C5327F97A090090793D /* CustomViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifiers.swift; sourceTree = "<group>"; };
+		C4CB33B127FEC6A9008BED3D /* InventoryMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryMeasurement.swift; sourceTree = "<group>"; };
+		C4CB33B327FEC819008BED3D /* CountUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountUnit.swift; sourceTree = "<group>"; };
+		C4CF078927EA30FE00B02AFA /* Inventory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Inventory.xcdatamodel; sourceTree = "<group>"; };
+		C4CF078E27EA3B8800B02AFA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C4CF079027EA3C8F00B02AFA /* CoreDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCoordinator.swift; sourceTree = "<group>"; };
+		C4CF079327EA458200B02AFA /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		C4DBFF98280044150028C7D1 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		C4DBFF9A2800458E0028C7D1 /* NestedListContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedListContent.swift; sourceTree = "<group>"; };
+		C4DBFF9C280083C40028C7D1 /* ExpiredInventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiredInventoryView.swift; sourceTree = "<group>"; };
+		C4DC519427EC90CB00C9CA52 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		C4DC519627EC930300C9CA52 /* UIScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScannerViewController.swift; sourceTree = "<group>"; };
+		C4DC519A27ECA2EF00C9CA52 /* UIScanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScanner.storyboard; sourceTree = "<group>"; };
+		C4DC519C27ECA71700C9CA52 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		C4DD8C0627ECB09B00C4E75A /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		C4ED2C8D27EB23A7006B80D6 /* UnitPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitPickerView.swift; sourceTree = "<group>"; };
+		C4EE26522804969300298888 /* InventoryByDateSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryByDateSetupView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C416004127E9F5F400F47D42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C410A65027EDE0D000E4E0D5 /* Item Views */ = {
+			isa = PBXGroup;
+			children = (
+				C410A65127EDE0E400E4E0D5 /* ItemEditView.swift */,
+			);
+			path = "Item Views";
+			sourceTree = "<group>";
+		};
+		C416003B27E9F5F400F47D42 = {
+			isa = PBXGroup;
+			children = (
+				C416004627E9F5F400F47D42 /* iSupplyTracker */,
+				C416004527E9F5F400F47D42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C416004527E9F5F400F47D42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C416004427E9F5F400F47D42 /* iSupplyTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C416004627E9F5F400F47D42 /* iSupplyTracker */ = {
+			isa = PBXGroup;
+			children = (
+				C4AE9C5027F8DFCA0090793D /* TestingCenter */,
+				C445859327F5C5F700BBA062 /* Utilities */,
+				C4CF078C27EA3B6900B02AFA /* Views */,
+				C4CF078B27EA310300B02AFA /* Model */,
+				C416004B27E9F5F500F47D42 /* Assets.xcassets */,
+				C416004D27E9F5F500F47D42 /* Preview Content */,
+			);
+			path = iSupplyTracker;
+			sourceTree = "<group>";
+		};
+		C416004D27E9F5F500F47D42 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C416004E27E9F5F500F47D42 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C431E0AC2805D84600BF06AF /* Settings Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C431E0A82805D83B00BF06AF /* InfoPane+CoreDataClass.swift */,
+				C431E0A92805D83B00BF06AF /* InfoPane+CoreDataProperties.swift */,
+			);
+			path = "Settings Entities";
+			sourceTree = "<group>";
+		};
+		C445859327F5C5F700BBA062 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C4CB33B127FEC6A9008BED3D /* InventoryMeasurement.swift */,
+				C4CB33B327FEC819008BED3D /* CountUnit.swift */,
+				C4DBFF9A2800458E0028C7D1 /* NestedListContent.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C460DF5427F985E3001F58A3 /* UIKit Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC519427EC90CB00C9CA52 /* ScannerViewController.swift */,
+				C4DC519627EC930300C9CA52 /* UIScannerViewController.swift */,
+				C4DC519A27ECA2EF00C9CA52 /* UIScanner.storyboard */,
+				C4DD8C0627ECB09B00C4E75A /* PreviewView.swift */,
+			);
+			path = "UIKit Views";
+			sourceTree = "<group>";
+		};
+		C47572C327F2FECB0006300E /* SummaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE26512804963A00298888 /* SettingsViews */,
+				C445858F27F5BDD600BBA062 /* SummaryView.swift */,
+				C4DBFF9C280083C40028C7D1 /* ExpiredInventoryView.swift */,
+			);
+			path = SummaryViews;
+			sourceTree = "<group>";
+		};
+		C479778B2812FD1900011F82 /* Edit Locations Views */ = {
+			isa = PBXGroup;
+			children = (
+				C485F4D72811FA8400CC1ECC /* EditLocationsView.swift */,
+				C479778C2812FD2E00011F82 /* EditLocationNameSheetView.swift */,
+			);
+			path = "Edit Locations Views";
+			sourceTree = "<group>";
+		};
+		C49230CE27EF62DA00FA76FE /* CoreData Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C431E0AC2805D84600BF06AF /* Settings Entities */,
+				C445859627F5DBEB00BBA062 /* StorageLocation+CoreDataClass.swift */,
+				C445859727F5DBEB00BBA062 /* StorageLocation+CoreDataProperties.swift */,
+				C49230C227EF62D300FA76FE /* Category+CoreDataClass.swift */,
+				C49230C327EF62D300FA76FE /* Category+CoreDataProperties.swift */,
+				C49230C627EF62D300FA76FE /* ItemInfo+CoreDataClass.swift */,
+				C49230C727EF62D300FA76FE /* ItemInfo+CoreDataProperties.swift */,
+				C445859A27F5DC1000BBA062 /* Lot+CoreDataClass.swift */,
+				C445859B27F5DC1000BBA062 /* Lot+CoreDataProperties.swift */,
+			);
+			path = "CoreData Entities";
+			sourceTree = "<group>";
+		};
+		C4AB233F27F087C300875E42 /* Complete Inventory Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4AB234027F087E900875E42 /* InventoryListView.swift */,
+			);
+			path = "Complete Inventory Views";
+			sourceTree = "<group>";
+		};
+		C4AE9C5027F8DFCA0090793D /* TestingCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C4AE9C5127F8DFDF0090793D /* ScannerToolbar.swift */,
+			);
+			path = TestingCenter;
+			sourceTree = "<group>";
+		};
+		C4CF078B27EA310300B02AFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C49230CE27EF62DA00FA76FE /* CoreData Entities */,
+				C4CF078827EA30FE00B02AFA /* Inventory.xcdatamodeld */,
+				C4CF079027EA3C8F00B02AFA /* CoreDataCoordinator.swift */,
+				C49230C027EF5E9C00FA76FE /* BarCode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4CF078C27EA3B6900B02AFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C47572C327F2FECB0006300E /* SummaryViews */,
+				C4CF079227EA456700B02AFA /* Category List */,
+				C4DBFF97280043ED0028C7D1 /* Locations Views */,
+				C4DC518F27EC697000C9CA52 /* BarCodeScanner */,
+				C4AB233F27F087C300875E42 /* Complete Inventory Views */,
+				C410A65027EDE0D000E4E0D5 /* Item Views */,
+				C4CF079527EA47AC00B02AFA /* Utility Views */,
+				C4CF078D27EA3B6E00B02AFA /* TopLevel */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4CF078D27EA3B6E00B02AFA /* TopLevel */ = {
+			isa = PBXGroup;
+			children = (
+				C416004927E9F5F400F47D42 /* ContentView.swift */,
+				C416004727E9F5F400F47D42 /* iSupplyTrackerApp.swift */,
+				C4CF078E27EA3B8800B02AFA /* RootView.swift */,
+			);
+			path = TopLevel;
+			sourceTree = "<group>";
+		};
+		C4CF079227EA456700B02AFA /* Category List */ = {
+			isa = PBXGroup;
+			children = (
+				C4CF079327EA458200B02AFA /* CategoriesListView.swift */,
+				C4A7BABD27EB10D600A39385 /* CategoryDetailView.swift */,
+			);
+			path = "Category List";
+			sourceTree = "<group>";
+		};
+		C4CF079527EA47AC00B02AFA /* Utility Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4A7BABF27EB12C800A39385 /* TextFieldNavigatationView.swift */,
+				C4ED2C8D27EB23A7006B80D6 /* UnitPickerView.swift */,
+				C4AB171427EB86E10070A50E /* ListItemContent.swift */,
+				C4598E1627F210A60063C50B /* SummedInventoryMeasurementView.swift */,
+				C4AE9C5327F97A090090793D /* CustomViewModifiers.swift */,
+			);
+			path = "Utility Views";
+			sourceTree = "<group>";
+		};
+		C4DBFF97280043ED0028C7D1 /* Locations Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4DBFF98280044150028C7D1 /* LocationsView.swift */,
+			);
+			path = "Locations Views";
+			sourceTree = "<group>";
+		};
+		C4DC518F27EC697000C9CA52 /* BarCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				C460DF5427F985E3001F58A3 /* UIKit Views */,
+				C4DC519C27ECA71700C9CA52 /* ScannerView.swift */,
+				C460DF5527F987CF001F58A3 /* LocationSelectionView.swift */,
+				C436F67527FAF0B200ACF5FD /* ExpirationDateSelectionView.swift */,
+			);
+			path = BarCodeScanner;
+			sourceTree = "<group>";
+		};
+		C4EE26512804963A00298888 /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				C479778B2812FD1900011F82 /* Edit Locations Views */,
+				C4EE26522804969300298888 /* InventoryByDateSetupView.swift */,
+				C44514D0280DBB7F00D345CB /* InventoryByThresholdSetupView.swift */,
+			);
+			path = SettingsViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C416004327E9F5F400F47D42 /* iSupplyTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C416005227E9F5F500F47D42 /* Build configuration list for PBXNativeTarget "iSupplyTracker" */;
+			buildPhases = (
+				C416004027E9F5F400F47D42 /* Sources */,
+				C416004127E9F5F400F47D42 /* Frameworks */,
+				C416004227E9F5F400F47D42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSupplyTracker;
+			productName = iSupplyTracker;
+			productReference = C416004427E9F5F400F47D42 /* iSupplyTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C416003C27E9F5F400F47D42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C416004327E9F5F400F47D42 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = C416003F27E9F5F400F47D42 /* Build configuration list for PBXProject "iSupplyTracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C416003B27E9F5F400F47D42;
+			productRefGroup = C416004527E9F5F400F47D42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C416004327E9F5F400F47D42 /* iSupplyTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C416004227E9F5F400F47D42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C416004F27E9F5F500F47D42 /* Preview Assets.xcassets in Resources */,
+				C416004C27E9F5F500F47D42 /* Assets.xcassets in Resources */,
+				C4DC519B27ECA2EF00C9CA52 /* UIScanner.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C416004027E9F5F400F47D42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C436F67627FAF0B200ACF5FD /* ExpirationDateSelectionView.swift in Sources */,
+				C4CF079427EA458200B02AFA /* CategoriesListView.swift in Sources */,
+				C445859D27F5DC1000BBA062 /* Lot+CoreDataProperties.swift in Sources */,
+				C4CB33B227FEC6A9008BED3D /* InventoryMeasurement.swift in Sources */,
+				C445859827F5DBEB00BBA062 /* StorageLocation+CoreDataClass.swift in Sources */,
+				C445859027F5BDD600BBA062 /* SummaryView.swift in Sources */,
+				C4DBFF9B2800458E0028C7D1 /* NestedListContent.swift in Sources */,
+				C4CB33B427FEC819008BED3D /* CountUnit.swift in Sources */,
+				C4CF079127EA3C8F00B02AFA /* CoreDataCoordinator.swift in Sources */,
+				C44514D1280DBB7F00D345CB /* InventoryByThresholdSetupView.swift in Sources */,
+				C49230C127EF5E9C00FA76FE /* BarCode.swift in Sources */,
+				C416004A27E9F5F400F47D42 /* ContentView.swift in Sources */,
+				C49230C827EF62D300FA76FE /* Category+CoreDataClass.swift in Sources */,
+				C431E0AB2805D83B00BF06AF /* InfoPane+CoreDataProperties.swift in Sources */,
+				C49230CD27EF62D300FA76FE /* ItemInfo+CoreDataProperties.swift in Sources */,
+				C460DF5627F987CF001F58A3 /* LocationSelectionView.swift in Sources */,
+				C445859927F5DBEB00BBA062 /* StorageLocation+CoreDataProperties.swift in Sources */,
+				C445859C27F5DC1000BBA062 /* Lot+CoreDataClass.swift in Sources */,
+				C4DC519727EC930300C9CA52 /* UIScannerViewController.swift in Sources */,
+				C49230C927EF62D300FA76FE /* Category+CoreDataProperties.swift in Sources */,
+				C4DBFF9D280083C40028C7D1 /* ExpiredInventoryView.swift in Sources */,
+				C4DD8C0727ECB09B00C4E75A /* PreviewView.swift in Sources */,
+				C4EE26532804969300298888 /* InventoryByDateSetupView.swift in Sources */,
+				C4598E1727F210A60063C50B /* SummedInventoryMeasurementView.swift in Sources */,
+				C4AB234127F087E900875E42 /* InventoryListView.swift in Sources */,
+				C4DC519D27ECA71700C9CA52 /* ScannerView.swift in Sources */,
+				C4AE9C5227F8DFDF0090793D /* ScannerToolbar.swift in Sources */,
+				C4AE9C5427F97A090090793D /* CustomViewModifiers.swift in Sources */,
+				C4CF078F27EA3B8800B02AFA /* RootView.swift in Sources */,
+				C4A7BAC027EB12C800A39385 /* TextFieldNavigatationView.swift in Sources */,
+				C479778D2812FD2E00011F82 /* EditLocationNameSheetView.swift in Sources */,
+				C4DC519527EC90CB00C9CA52 /* ScannerViewController.swift in Sources */,
+				C431E0AA2805D83B00BF06AF /* InfoPane+CoreDataClass.swift in Sources */,
+				C4ED2C8E27EB23A7006B80D6 /* UnitPickerView.swift in Sources */,
+				C4CF078A27EA30FE00B02AFA /* Inventory.xcdatamodeld in Sources */,
+				C485F4D82811FA8400CC1ECC /* EditLocationsView.swift in Sources */,
+				C4AB171527EB86E10070A50E /* ListItemContent.swift in Sources */,
+				C4DBFF99280044150028C7D1 /* LocationsView.swift in Sources */,
+				C410A65227EDE0E400E4E0D5 /* ItemEditView.swift in Sources */,
+				C4A7BABE27EB10D600A39385 /* CategoryDetailView.swift in Sources */,
+				C49230CC27EF62D300FA76FE /* ItemInfo+CoreDataClass.swift in Sources */,
+				C416004827E9F5F400F47D42 /* iSupplyTrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C416005027E9F5F500F47D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C416005127E9F5F500F47D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C416005327E9F5F500F47D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSupplyTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WASNT9DG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "iSupplyTracker requires camera access to scan barcodes";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Daniel-Pressner.iSupplyTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C416005427E9F5F500F47D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSupplyTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WASNT9DG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "iSupplyTracker requires camera access to scan barcodes";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Daniel-Pressner.iSupplyTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C416003F27E9F5F400F47D42 /* Build configuration list for PBXProject "iSupplyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C416005027E9F5F500F47D42 /* Debug */,
+				C416005127E9F5F500F47D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C416005227E9F5F500F47D42 /* Build configuration list for PBXNativeTarget "iSupplyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C416005327E9F5F500F47D42 /* Debug */,
+				C416005427E9F5F500F47D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4CF078827EA30FE00B02AFA /* Inventory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4CF078927EA30FE00B02AFA /* Inventory.xcdatamodel */,
+			);
+			currentVersion = C4CF078927EA30FE00B02AFA /* Inventory.xcdatamodel */;
+			path = Inventory.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C416003C27E9F5F400F47D42 /* Project object */;
+}

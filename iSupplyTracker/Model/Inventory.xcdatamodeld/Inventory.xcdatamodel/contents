@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppSettings" representedClassName="AppSettings" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="minimumDesiredInventoryMagnitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="minimumDesiredInventoryUnits" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String" defaultValueString="New Category"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ItemInfo" inverseName="category" inverseEntity="ItemInfo"/>
+    </entity>
+    <entity name="InfoPane" representedClassName="InfoPane" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="keys" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="title" attributeType="String" defaultValueString="&quot;&quot;"/>
+        <attribute name="type" attributeType="String"/>
+    </entity>
+    <entity name="ItemInfo" representedClassName="ItemInfo" syncable="YES">
+        <attribute name="barCode" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="packageQuantityMagnitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="packageQuantityUnits" attributeType="String"/>
+        <attribute name="shelfLifeInMonths" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="items" inverseEntity="Category"/>
+        <relationship name="lots" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Lot" inverseName="item" inverseEntity="Lot"/>
+    </entity>
+    <entity name="Lot" representedClassName="Lot" syncable="YES">
+        <attribute name="dateScanned" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="item" maxCount="1" deletionRule="Nullify" destinationEntity="ItemInfo" inverseName="lots" inverseEntity="ItemInfo"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StorageLocation" inverseName="lots" inverseEntity="StorageLocation"/>
+    </entity>
+    <entity name="StorageLocation" representedClassName="StorageLocation" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString="New Location"/>
+        <relationship name="lots" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Lot" inverseName="location" inverseEntity="Lot"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="InfoPane" positionX="-54" positionY="72" width="128" height="89"/>
+        <element name="ItemInfo" positionX="-54" positionY="18" width="128" height="149"/>
+        <element name="Lot" positionX="-36" positionY="63" width="128" height="104"/>
+        <element name="StorageLocation" positionX="-54" positionY="72" width="128" height="74"/>
+        <element name="AppSettings" positionX="-54" positionY="72" width="128" height="74"/>
+    </elements>
+</model>
